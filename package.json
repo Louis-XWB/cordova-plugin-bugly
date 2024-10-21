@@ -1,17 +1,26 @@
 {
   "name": "cordova-plugin-novar-bugly",
   "version": "1.0.0",
-  "description": "",
+  "description": "A cordova plugin of base on tecent bugly",
   "cordova": {
     "id": "cordova-plugin-novar-bugly",
     "platforms": [
       "android"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louis-XWB/cordova-plugin-bugly.git"
+  },
   "keywords": [
-    "ecosystem:cordova",
+    "cordova",
+    "bugly",
     "cordova-android"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "novar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Louis-XWB/cordova-plugin-bugly/issues"
+  },
+  "homepage": "https://github.com/Louis-XWB/cordova-plugin-bugly"
 }
