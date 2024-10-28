@@ -28,4 +28,19 @@
 		<framework src="com.tencent.bugly:crashreport_upgrade:latest.release" />
 		<framework src="com.tencent.bugly:nativecrashreport:latest.release" />
 	</platform>
+	<platform name="ios">
+		<header-file src="src/ios/CordovaBugly.h" />
+		<source-file src="src/ios/CordovaBugly.m" />
+		<framework src="SystemConfiguration.framework" />
+		<framework src="Security.framework" />
+		<framework src="libz.tbd" />
+		<framework src="libc++.tbd" />
+		<framework src="src/ios/Bugly.framework" custom="true" />
+		<config-file target="config.xml" parent="/*">
+			<feature name="CordovaBugly">
+				<param name="ios-package" value="CordovaBugly" />
+				<param name="onload" value="true" />
+			</feature>
+		</config-file>
+	</platform>
 </plugin>
